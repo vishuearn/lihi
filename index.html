@@ -3,54 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto</title>
-    <script>
-        // WhatsApp numbers list
-        const numbers = [
-            "+916307777388",
-            "+917392910195",
-            "+918400757571",
-            "+918862866310",
-            "+917033936122",
-            "+917362824414",
-            "+918858812789",
-            "+917047062733",
-            "+919836705166"
-
-        ];
-
-        // Telegram channel link (no message)
-        const telegramLink = "https://t.me/visalearning"; // Replace with your Telegram channel link
-
-        // Predefined message for WhatsApp
-        const message = "Hii i am interested";
-
-        // Function to generate a random WhatsApp number or Telegram link and auto-redirect
-        function autoRedirect() {
-            // Randomly decide whether to redirect to WhatsApp or Telegram
-            const isWhatsApp = Math.random() < 0.5; // 50% chance for WhatsApp, 50% for Telegram
-
-            if (isWhatsApp) {
-                // Select a random WhatsApp number
-                const randomIndex = Math.floor(Math.random() * numbers.length);
-                const selectedNumber = numbers[randomIndex];
-                const encodedMessage = encodeURIComponent(message);
-                const whatsappLink = `https://wa.me/${selectedNumber}?text=${encodedMessage}`;
-                
-                // Redirect to WhatsApp with the message
-                window.location.href = whatsappLink;
-            } else {
-                // Redirect to Telegram channel (no message)
-                window.location.href = telegramLink;
-            }
+    <title>Auto Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            text-align: center;
+            padding: 50px;
+            color: white;
         }
-
-        // Call the function on page load
-        window.onload = autoRedirect;
-    </script>
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            max-width: 400px;
+            margin: auto;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-<!--     <h1>Redirecting...</h1>
-    <p>You are being redirected to WhatsApp or Telegram...</p> -->
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Please wait while we redirect you...</p>
+    </div>
+
+    <script>
+        const whatsappNumbers = [
+            "854380959", "7762035956", "7745943790", "7800434482",
+            "8604780225", "9771096501", 
+            
+        ];
+
+        function getRandomNumber() {
+            return whatsappNumbers[Math.floor(Math.random() * whatsappNumbers.length)];
+        }
+
+        setTimeout(function() {
+            let randomNumber = getRandomNumber();
+            let message = encodeURIComponent("Can you tell me the process of this part time job which earns INR 1,000 per day?");
+            window.location.href = "https://wa.me/91" + randomNumber + "?text=" + message;
+        }, 3000); // 3 सेकंड बाद रीडायरेक्ट होगा
+
+    </script>
+
 </body>
 </html>
