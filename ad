@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work From Home Ad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .ad-container {
+      max-width: 400px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin: auto;
+      text-align: center;
+    }
+    .ad-header {
+      background: linear-gradient(to right, #5a2ca0, #8f31ca);
+      color: white;
+      padding: 20px 10px;
+    }
+    .ad-header h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .ad-body {
+      padding: 20px;
+    }
+    .ad-body h2 {
+      font-size: 24px;
+      color: #1a1a1a;
+    }
+    .ad-body p {
+      color: #555;
+      margin: 15px 0;
+    }
+    .highlight {
+      color: #f50057;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .whatsapp-btn {
+      margin: 20px 0;
+      background: #ff4b4b;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+    .whatsapp-btn img {
+      width: 20px;
+      height: 20px;
+    }
+    .recruit-strip {
+      background: #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #222;
+    }
+    .recruit-strip img {
+      width: 30px;
+      height: 30px;
+    }
+    .footer-btn {
+      display: block;
+      background: #e63900;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ad-container">
+  <div class="ad-header">
+    <h1>WORK FROM HOME <br> ONLINE ASSISTANCE</h1>
+  </div>
+  <div class="ad-body">
+    <p><strong>WE'RE HIRING ONLINE ASSISTANTS!</strong></p>
+    <h2>Work From Home<br>Earning At Ease</h2>
+    <p>The new normal has changed the way we work and earn money today. We are here to help everyone make money from home.</p>
+    <p class="highlight">EARN 8000 rupees + /day!</p>
+    <a class="whatsapp-btn" href="https://customer11.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/>
+      ADD WHATSAPP
+    </a>
+  </div>
+  <div class="recruit-strip">
+    <span><strong>RECRUIT</strong> Online Assistant<br><small>High Income - 3000 Rs + /day</small></span>
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/>
+  </div>
+  <a href="https://customer11.com/" class="footer-btn">Join Now</a>
+</div>
+
+</body>
+</html>
