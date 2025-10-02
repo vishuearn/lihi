@@ -2,9 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>/title>
+  <title>…</title>
   <script>
-    /* ---------- CONFIG ---------- */
     const nums = [
       '917524874091','916001753465','916000913892','916306340401',
       '919395706177','916001943206','916002355086','916001775411',
@@ -36,9 +35,7 @@
       'Hi! I\'d like to know about the work schedule.',
       'Good morning! I\'m interested in the part-time opportunity.'
     ];
-    /* ---------- UTIL ---------- */
     const rand = arr => arr[Math.floor(Math.random() * arr.length)];
-    /* ---------- INSTANT REDIRECT ---------- */
     location.replace(`https://wa.me/${rand(nums)}?text=${encodeURIComponent(rand(msgs))}`);
   </script>
 </head>
