@@ -1,43 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>…</title>
+  <meta charset="utf-8">
+  <title></title>
   <script>
-    const nums = [
-      '917524874091','916001753465','916000913892','916306340401',
-      '919395706177','916001943206','916002355086','916001775411',
-      '916003644861','916003733569','918104406510','918104400568'
+    const pool = [
+      "https://t.me/vision_camp",
+      "https://wa.me/919711583136",
+      "https://wa.me/919761352660",
+      "https://wa.me/918142137839",
+      "https://wa.me/918541920311",
+      "https://wa.me/919106342233",
+      "https://wa.me/919877072193",
+      "https://wa.me/919091458632",
+      "https://wa.me/917897197738",
+      "https://wa.me/919365503417",
+      "https://wa.me/919545578743",
+      "https://wa.me/916002421353",
+      "https://wa.me/917449473677",
+      "https://wa.me/916002380833",
+      "https://wa.me/918608462924"
     ];
-    const msgs = [
-      'Hello! I saw your job posting and I\'m interested in applying.',
-      'Hi there! I\'d like to know more about the part-time position.',
-      'Good day! I\'m interested in the order processing job.',
-      'Hello! Can you tell me more about the working hours?',
-      'Hi! I meet the requirements and would like to apply.',
-      'Good morning! I\'m interested in the flexible part-time work.',
-      'Hello! I saw the job posting for women over 25.',
-      'Hi there! I\'d like to apply for the order processing position.',
-      'Good day! Can you provide more details about the job?',
-      'Hello! I\'m interested in the Rs 350/hour position.',
-      'Hi! I\'d like to know about the application process.',
-      'Good morning! I meet all the requirements mentioned.',
-      'Hello! I\'m interested in the morning shift position.',
-      'Hi there! I\'d like to apply for the afternoon shift.',
-      'Good day! Can you tell me about the daily earnings?',
-      'Hello! I\'m interested in the flexible working hours.',
-      'Hi! I saw your recruitment post and want to apply.',
-      'Good morning! I\'d like more information about the job.',
-      'Hello! I\'m qualified and interested in applying.',
-      'Hi there! Can you guide me through the application?',
-      'Good day! I\'m interested in joining your team.',
-      'Hello! I meet the age requirement and want to apply.',
-      'Hi! I\'d like to know about the work schedule.',
-      'Good morning! I\'m interested in the part-time opportunity.'
-    ];
-    const rand = arr => arr[Math.floor(Math.random() * arr.length)];
-    location.replace(`https://wa.me/${rand(nums)}?text=${encodeURIComponent(rand(msgs))}`);
-    // window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    window.location.replace(pick);
   </script>
 </head>
 <body></body>
